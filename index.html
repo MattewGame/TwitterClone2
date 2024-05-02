@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Щебет птиц</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Щебетание</h1>
+    
+    <button onclick="openRegistrationModal()">Регистрация</button>
+
+    <div>
+        <h2>Добавить статус</h2>
+        <input type="text" id="statusInput" placeholder="Введите статус">
+        <button onclick="addStatus()">Добавить статус</button>
+    </div>
+    
+    <ul id="statusList"></ul>
+    
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegistrationModal()">&times;</span>
+            <input type="text" id="usernameInput" placeholder="Имя пользователя">
+            <input type="password" id="passwordInput" placeholder="Пароль">
+            <button onclick="registerUser()">Зарегистрироваться</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
